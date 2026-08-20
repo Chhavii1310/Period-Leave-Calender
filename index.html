@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Period Leave Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="student-header">
+
+    <div>
+        <h2>Welcome, Student</h2>
+        <p>Student ID: BV2026XXX</p>
+    </div>
+
+    <div class="profile-icon">
+        👤
+    </div>
+
+</div>
+        <h1>Period Leave Calendar</h1>
+
+        <p class="subtitle">
+            Select your period leave days within the allowed 5-day window.
+        </p>
+
+        <div class="calendar-box">
+
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+
+                <h2 id="monthYear">August 2026</h2>
+
+                <button id="nextMonth">&gt;</button>
+            </div>
+
+            <div class="period-start">
+
+                <p>Select the first day of your period:</p>
+
+                <button id="startPeriodBtn">
+                    Select Period Start Date
+                </button>
+
+                <p id="startDateText">
+                    No start date selected
+                </p>
+
+                <button id="newPeriodBtn">
+                    Start New Period
+                </button>
+
+                <button id="testExpiryBtn">
+                    Test Window Expiry
+                </button>
+
+            </div>
+
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <div id="calendar" class="calendar"></div>
+
+           <div class="leave-info">
+
+    <h3>Period Leave Summary</h3>
+
+    <div class="leave-cards">
+
+        <div class="leave-card">
+            <p>Leaves Used</p>
+            <span id="leaveCount">0 / 3</span>
+        </div>
+
+        <div class="leave-card">
+            <p>Remaining</p>
+            <span id="remainingCount">3</span>
+        </div>
+
+        <div class="leave-card">
+            <p>Period Start</p>
+            <span id="periodStartDisplay">Not Selected</span>
+        </div>
+
+    </div>
+
+    <p class="selected-days-text">
+        Selected Days:
+        <span id="selectedDays">None</span>
+    </p>
+
+</div>
+
+            <div class="legend">
+
+                <div class="legend-item">
+                    <span class="legend-box window-color"></span>
+                    5-Day Window
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-box selected-color"></span>
+                    Selected Leave
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-box start-color"></span>
+                    Period Start
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
